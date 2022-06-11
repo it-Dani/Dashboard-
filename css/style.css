@@ -1,0 +1,474 @@
+@import url(reset.css);
+html , body{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.Dashboard-control-page{
+    background-color: white;
+}
+.dashboard-header{
+    background-color: rgb(47, 24, 76);
+    height: 70px;
+    display: block;
+}
+.res-header-icon{
+    display: none;
+}
+.dashboard-header .header-logo{
+    margin: 9px 20px;
+    
+}
+.dashboard-header a{
+    text-decoration: none;
+    color: rgb(232, 207, 238);
+    margin-left: 15px;
+    border-bottom: 2px solid rgb(47, 24, 76);
+    padding-bottom: 18px;
+}
+.dashboard-header ul{
+    margin: -46px 70px;
+}
+.dashboard-header li{
+    list-style-type: none;
+    display: inline;
+}
+.dashboard-header a:focus{
+    color: white;
+    border-bottom: 4px solid orange;
+}
+.header-img img{
+    width: 40px;
+    margin-top: 15px;
+    float: right;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.header-img .notification-icon{
+    width: 30px;
+    margin-top: 19px;
+}
+.header-img .search-icon{
+    width: 28px;
+    margin-top: 19px;
+}
+.header-serach-box{
+    display: none;
+}
+
+.header-serach-box{
+    padding: 10px;
+    float: right;
+    margin-top: -44px;
+    margin-right: -130px ;
+    border-radius: 5px;
+}
+.dashborad-middle{
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+.about{
+    background-color: rgb(255, 255, 255);
+    height: 100%;    
+    display: grid;
+}
+.sub-about{
+    padding: 15px;
+}
+.star{
+    border: 1px rgba(171, 130, 238, 0.329);
+    border-radius: 10px;
+    background-color: rgba(171, 130, 238, 0.329);
+    margin: 20px;
+}
+.sub-about .shape{
+    display: flex;
+}
+.sub-about .shape span{
+    margin-left: 5px;
+}
+.star span{
+    color:rgba(52, 28, 90, 0.712)
+}
+.star a {
+    color:rgba(52, 28, 90, 0.712);
+    font-weight: 700;   
+}
+.star p{
+    margin: 10px 0px;
+}
+.gear{
+    border: 1px rgb(235, 201, 215);
+    border-radius: 10px;
+    background-color: rgb(235, 201, 215);
+    margin: 20px;
+}
+.gear span{
+    color:rgb(211, 49, 116);
+}
+.gear a {
+    color:rgb(211, 49, 116);
+    font-weight: 700;   
+}
+.gear p{
+    margin: 10px 0px;
+}
+.trophy{
+    border: 1px rgba(116, 194, 123, 0.329);
+    border-radius: 10px;
+    background-color: rgba(116, 194, 123, 0.329);
+    margin: 20px;
+}
+.trophy span{
+    color:rgba(34, 158, 45, 0.637);
+}
+.trophy a {
+    color:rgba(34, 158, 45, 0.637);
+    font-weight: 700;   
+}
+
+.trophy p{
+    margin: 10px 0px;
+}
+.briefcase{
+    border: 1px rgba(171, 130, 238, 0.329);
+    border-radius: 10px;
+    background-color: rgba(171, 130, 238, 0.329);
+    margin: 20px;
+}
+.briefcase span {
+    color:rgba(36, 93, 167, 0.712)
+}
+.briefcase a {
+    color:rgba(36, 93, 167, 0.712);
+    font-weight: 700;   
+}
+.briefcase p{
+    margin: 10px 0px;
+}
+.sub-about span {
+    font-weight: 900;
+}
+
+.add-icon{
+    direction: rtl;
+}
+.add-icon img{
+    background-color: rgb(48, 24, 75);
+    border-radius: 100%;
+    margin: 30px 30px 0px 0px;
+    position: fixed;
+    bottom: 0;
+    width: 40px;
+}
+
+.contacts{
+    background-color: rgba(214, 183, 214, 0.242);
+    height: 1005px;
+}
+.status{
+    margin: 20px;
+    box-shadow: 0px 0px 10px #aaa;
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+}
+.username{
+    padding-top: -15px;
+    display: flex;
+}
+.username span{
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 7px;
+}
+.clock{
+    float: right;
+    border: 1px solid #ccc;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: -44px;
+    display: flex;
+}
+.clock span{
+    margin-right: 25px;
+}
+.middle-boxes{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/*left middle box*/
+.connected-users-box{
+    box-shadow: 0px 0px 10px #ccc;
+    margin: 0px 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.connected-users-box p{
+    margin-left: 51px;
+    margin-top: -13px;
+    color: #aaa;
+}
+.connected-users-box span{
+    margin-left: 10px;
+}
+.connected-users-box .information{
+    display: flex;
+    margin-top: 15px;
+}
+.information span{
+    font-weight: 900;
+}
+.connected-users-box .last-seen{
+    float: right;
+    margin-top: -48px;
+    display: flex;
+}
+.connected-users-box .last-seen span{
+    margin-right: 10px
+}
+.connects-topic{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0px 0px 10px 21px;
+    font-weight: 700;
+}
+.connects-topic a{
+    direction: rtl;
+    margin-right: 19px ;
+}
+/*left middle box end*/
+
+/* right middle box start*/
+.My-jobs-box{
+    box-shadow: 0px 0px 10px #ccc;
+    height: 82%;
+    margin: 0px 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.My-jobs-box p{
+    margin-left: 25px;
+    margin-top: 0px;
+    color: #aaa;
+}
+.My-jobs span{
+    margin-left: 10px;
+}
+.My-jobs img{
+    margin-left: -25px;
+}
+.My-jobs-box .information{
+    display: flex;
+    margin-top: 11px;
+}
+.information span{
+    font-weight: 900;
+}
+.My-jobs-box .last-seen{
+    float: right;
+    margin-top: -48px;
+    display: flex;
+}
+.last-seen span{
+    margin-right: 35px
+}
+.my-jobs-topic{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0px 0px 10px 10px;
+    font-weight: 700;
+}
+
+.my-jobs-topic a{
+    direction: rtl;
+    margin-right: 19px ;
+}
+/* right middle box end*/
+.lower-mid-box{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #ccc;
+    margin: 20px 20px -100px 20px;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-y: scroll;
+    height: 400px;
+}
+.lower-mid-child{
+    margin: 20px 0px 0px 0px;
+    cursor: pointer;
+}
+.lower-mid-child-profile{
+    float: right;
+    margin-top: -20px;
+}
+.lower-mid-child-profile .third-prof{
+    margin-right: -13px;
+}
+.lower-mid-child-profile .second-prof{
+    margin-right: -13px;
+}
+.lower-mid-child-profile .first-prof{
+    margin-right: -13px;
+}
+.lower-mid-child-text i{
+    color: #fff;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.lower-mid-child-text:hover i{
+    color: #000;
+    border-radius: 5px;
+    background-color: #000;
+}
+.lower-mid-child-time{
+    display: flex;
+    margin-top: 8px;
+}
+.lower-mid-child-time span{
+    margin-left: 5px ;
+}
+.lower-mid-topic{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 20px 20px;
+    font-weight: 900;
+}
+.lower-mid-topic a{
+    text-align: right;
+}
+.go-top{
+    position: fixed;
+    bottom: 0;
+}
+.go-top img{
+    width: 40px;
+}
+.res-header i{
+    display: none;
+}
+.res-header li{
+    background-color: royalblue;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    margin: 10px;
+    transition: all ease-in-out 0.3s;
+    display: none;
+}
+.res-status{
+    display: none;
+}
+.res-date{
+    display: none;
+}
+ @media only screen and (max-width :910px){
+    .dashboard-header ul li{
+        display: none;
+    }
+    .res-header i{
+        display: inline;        
+    }
+    /*.res-header i:hover li{
+        display: block;
+        width: 100px;
+        z-index: 999;
+    }
+    */
+    .header-img{
+        margin-top: -60px;
+    }
+    .dashborad-middle{
+        grid-template-columns: 100%;
+    }
+    .about{
+        box-shadow: 0px 0px 10px #ccc;
+        border-radius: 5px;
+        grid-template-columns: 50% 50%;
+    }
+    .middle-boxes{
+        grid-template-columns: 100%;
+    }
+    .my-jobs-topic{
+        margin-top: 20px;
+    }
+    .contacts{
+        height: 100%;
+    }
+    .lower-mid-topic{
+        margin-top: 50px;
+    }
+    .lower-mid-child{
+        display: grid;
+    }
+    .lower-mid-child-profile{
+        margin-top: 12px;
+    }
+    .lower-mid-box{
+        margin-bottom: 0px;
+    }
+    .status{
+        display: none;
+    }
+    .res-status{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .res-status .res-username{
+        display: flex;
+        margin: 0px auto;
+        margin-top: 20px;
+    }
+    .res-status .res-username span{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .res-status .clock{
+        border: 1px solid #ccc;
+        width: 150px;
+        padding: 15px;
+        border-radius: 5px;
+        margin-left: 20px;
+        margin-top: -44px;
+    }
+    .res-status .clock span{
+        margin-right: 25px;
+    }
+    
+    .middle-boxes{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .res-date{
+        display: flex;
+        margin: 20px;
+        text-align: center;
+    }
+    .res-clock{
+        border: 2px solid #ccc;
+        width: 500px;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 0px auto;
+        margin: 0px 5px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+}
+@media only screen and (max-width :450px){
+    .about{
+        grid-template-columns: 100%;
+    }
+}
